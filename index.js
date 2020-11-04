@@ -22,19 +22,19 @@ answer : "Cascading Style Sheets"
     choices: ["2005","1995","1993", "2015"],
     answer : "1993"    
 },
-{title: "3. Who invented the internet?",
+{ title: "3. Who invented the internet?",
     choices: ["Steve Jobs","Vint Cerf","Bill Gates", "Albert Einstein"],
     answer : "Vint Cerf"    
 },
-{title: "4. When internet was invented?",
+{ title: "4. When internet was invented?",
     choices: ["1870","1930","1960","1990"],
     answer : "1960"    
 },
-{title: "5. Which one is largest technology company by revenue? ",
+{ title: "5. Which one is largest technology company by revenue? ",
 choices: ["Apple","Amazon","AT&T","Samsung"],
 answer : "Amazon"    
 },
-{title: "6. Who created the like button on facebook? ",
+{ title: "6. Who created the like button on facebook? ",
 choices: ["Mark Zuckerberg","Priscilla Chan","Justin Rosenstein","Sean Parker"],
 answer : "Justin Rosenstein"    
 },
@@ -66,6 +66,12 @@ function gametime(){
         timer.innerText = count
          count--;
         }, 1000);
+
+        // if(count < 0) {
+        //     clearInterval(count);
+        // }
+
+        
 //     if (count < 0)
 //     endgame();      
 
@@ -115,7 +121,7 @@ function displaynextQuestion(e){
         
     }
 }
-function correction(response){
+    function correction(response){
     
     if(response){
         alert.innerText= "Good"
@@ -132,7 +138,6 @@ function correction(response){
     
         }, 1000);
 
-       
 }
  function endgame (){
 
