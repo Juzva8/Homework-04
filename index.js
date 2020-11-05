@@ -52,30 +52,21 @@ function starQuiz(){
     console.log(nextQuestions.title)
     
         displayQuestion(nextQuestions)
-
     gametime()
 }
 submitBtn.addEventListener("click" , function(){
     let name = document.getElementById("inputScore").value
     scorePage(name, count)
 });
-
 function gametime(){
-
     var timeinterval = setInterval(function(){
-        timer.innerText = count
-         count--;
+        count--;
+        timer.textContent = count
+        if (count === 0) {
+            clearInterval(timeinterval)
+            endgame()
+        }
         }, 1000);
-
-        // if(count < 0) {
-        //     clearInterval(count);
-        // }
-
-        
-//     if (count < 0)
-//     endgame();      
-
-// cant stop timer going negative. 
 }
 function scorePage(a, b) {
 
@@ -88,7 +79,6 @@ function scorePage(a, b) {
     localStorage.setItem("userData", JSON.stringify(allScores));
     location.href = "score.html";
 }
-
 function displayQuestion(question){
     titleIt.innerText=question.title
     question.choices.forEach(element => {
@@ -100,8 +90,6 @@ function displayQuestion(question){
     button.addEventListener("click", displaynextQuestion)
     });
 }
-
-
 function displaynextQuestion(e){
     currentindex++
     if(currentindex < questions.length){
@@ -114,15 +102,12 @@ function displaynextQuestion(e){
             currentindex = 0
             displayQuestion(nextQuestions)  
         }
-
     }else{
         console.log("endgame")
         endgame()
-        
     }
 }
     function correction(response){
-    
     if(response){
         alert.innerText= "Good"
         console.log("Good")
@@ -131,16 +116,9 @@ function displaynextQuestion(e){
         count = count -10
         timer.innerHTML = count
         console.log("Wrong")
-
     }
-    setTimeout(function(){
-        alert.innerText=""
-    
-        }, 1000);
-
 }
  function endgame (){
-
     myScore.innaText = count
     addscore.classList.remove("d-none")
     clock.classList.add("d-none")
