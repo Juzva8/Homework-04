@@ -13,9 +13,7 @@ background-size: cover;
 .startbtn{
   margin: 20px;
 }
-#start-btn{
-  float: center;
-}
+
 }
 input[type=text], select, textarea {
   width: 100%; 
