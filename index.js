@@ -14,43 +14,43 @@ var alert =document.getElementById("alert");
 var allScores = [];
 var storedScores = JSON.parse(localStorage.getItem("userData"));
 var questions = [
-{ title: "1. What does css stand for?",
+{ subject: "1. What does css stand for?",
 choices: ["Cascading Style Sheets","Colorful Style Sheets","Computer Style Sheets", "Common Style Sheets"],
 answer : "Cascading Style Sheets"    
 },
-{ title: "2. Which year html introduced?",
+{ subject: "2. Which year html introduced?",
     choices: ["2005","1995","1993", "2015"],
     answer : "1993"    
 },
-{ title: "3. Who invented the internet?",
+{ subject: "3. Who invented the internet?",
     choices: ["Steve Jobs","Vint Cerf","Bill Gates", "Albert Einstein"],
     answer : "Vint Cerf"    
 },
-{ title: "4. When internet was invented?",
+{ subject: "4. When internet was invented?",
     choices: ["1870","1930","1960","1990"],
     answer : "1960"    
 },
-{ title: "5. Which one is largest technology company by revenue? ",
+{ subject: "5. Which one is largest technology company by revenue? ",
 choices: ["Apple","Amazon","AT&T","Samsung"],
 answer : "Amazon"    
 },
-{ title: "6. Who created the like button on facebook? ",
+{ subject: "6. Who created the like button on facebook? ",
 choices: ["Mark Zuckerberg","Madonna","Justin Rosenstein","Borat"],
 answer : "Justin Rosenstein"    
 },
-{ title: "7. When microsoft was founded?  ",
+{ subject: "7. When microsoft was founded?  ",
 choices: ["1995","1965","1985","1975"],
 answer : "1975"    
 },
-{ title: "8. Which country has best supercomputer?",
+{ subject: "8. Which country has best supercomputer?",
 choices: ["Japan","USA","Russia","China"],
 answer : "Japan"    
 },
-{ title: "9. Where is fastest internet in the world?",
+{ subject: "9. Where is fastest internet in the world?",
 choices: ["USA","South Korea","North Korea","Taiwan"],
 answer : "Taiwan"    
 },
-{ title: "10. Did you liked this quiz?",
+{ subject: "10. Did you liked this quiz?",
 choices: ["I don't know","No","Yes","You'll see"],
 answer : "You'll see"    
 },
@@ -65,7 +65,7 @@ function starQuiz(){
     clock.classList.remove("d-none")
     quizQuestions.classList.remove("d-none")
     nextQuestions= questions[currentindex]
-    console.log(nextQuestions.title)
+    console.log(nextQuestions.subject)
     
         displayQuestion(nextQuestions)
     gametime()
@@ -85,18 +85,16 @@ function gametime(){
         }, 1000);
 }
 function scorePage(a, b) {
-
     var userData = {
         inits: a,
         userScore: b
     };
     allScores.push(userData);
-
     localStorage.setItem("userData", JSON.stringify(allScores));
     location.href = "score.html";
 }
 function displayQuestion(question){
-    titleIt.innerText=question.title
+    titleIt.innerText=question.subject
     question.choices.forEach(element => {
      var button =document.createElement("button")
     button.className="btn-primary btn-block text-left"

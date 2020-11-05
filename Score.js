@@ -3,7 +3,6 @@ var highScores = document.querySelector("#highScoresList");
 var again = document.querySelector("#again");
 var clearBtn = document.querySelector("#clearScores");
 var Startbtn = document.querySelector("#start-btn");
-
 var audioElement = document.createElement("audio");
 audioElement.setAttribute("src", "Beatrich.mp3");
 function displayScores() {
@@ -24,9 +23,6 @@ displayScores();
 again.addEventListener("click", function () {
     location.href = "index.html";
 });
-
-// .sort(function(a, b){return a-b});
-
 clearBtn.addEventListener("click", function () {
     highScores.innerHTML = "";
     window.localStorage.clear();
