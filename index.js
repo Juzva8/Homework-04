@@ -9,7 +9,7 @@ var myScore = document.getElementById("score");
 var submitBtn = document.getElementById("submitBtn");
 var currentindex = 0;
 var score = 0;
-var count = 75;
+var count = 120;
 var alert =document.getElementById("alert");
 var allScores = [];
 var storedScores = JSON.parse(localStorage.getItem("userData"));
@@ -35,8 +35,24 @@ choices: ["Apple","Amazon","AT&T","Samsung"],
 answer : "Amazon"    
 },
 { title: "6. Who created the like button on facebook? ",
-choices: ["Mark Zuckerberg","Priscilla Chan","Justin Rosenstein","Sean Parker"],
+choices: ["Mark Zuckerberg","Madonna","Justin Rosenstein","Borat"],
 answer : "Justin Rosenstein"    
+},
+{ title: "7. When microsoft was founded?  ",
+choices: ["1995","1965","1985","1975"],
+answer : "1975"    
+},
+{ title: "8. Which country has best supercomputer?",
+choices: ["Japan","USA","Russia","China"],
+answer : "Japan"    
+},
+{ title: "9. Where is fastest internet in the world?",
+choices: ["USA","South Korea","North Korea","Taiwan"],
+answer : "Taiwan"    
+},
+{ title: "10. Did you liked this quiz?",
+choices: ["I don't know","No","Yes","You'll see"],
+answer : "You'll see"    
 },
 ]
 Startbtn.addEventListener("click", starQuiz);
