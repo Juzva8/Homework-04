@@ -55,6 +55,7 @@ choices: ["I don't know","No","Yes","You'll see"],
 answer : "You'll see"    
 },
 ]
+
 Startbtn.addEventListener("click", starQuiz);
 function starQuiz(){
     if(storedScores !==null) {

@@ -32,10 +32,7 @@
           <span class="music"></span> Play Song</button>
         <button class="btn btn btn-xs pause-button">
           <span class="pause"></span> Pause Song</button>
-           
-     
           </div>
-    
       </div>
     </nav>
     <body>
@@ -53,21 +50,13 @@
                   </div>
                   <div class="col-4"></div>
               </div>
-              
           </div>
       </div>
       <script>
-
-        // JavaScript function that wraps everything
         $(document).ready(function() {
-      
           var captainPlanet = $(".captain-planet");
-      
-          // Gets Link for Theme Song
           var audioElement = document.createElement("audio");
           audioElement.setAttribute("src", "Beatrich.mp3");
-      
-          // Theme Button
           $(".theme-button").on("click", function() {
             audioElement.play();
           });
@@ -86,5 +75,4 @@
     </footer>
 <script src="Score.js"></script>
 </body>
-
 </html>
