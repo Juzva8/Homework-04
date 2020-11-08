@@ -27,5 +27,3 @@ clearBtn.addEventListener("click", function () {
     highScores.innerHTML = "";
     window.localStorage.clear();
 });
-
-

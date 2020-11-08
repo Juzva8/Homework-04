@@ -8,12 +8,10 @@ body
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-
 }
 .startbtn{
   margin: 20px;
 }
-
 }
 input[type=text], select, textarea {
   width: 100%; 
@@ -25,7 +23,6 @@ input[type=text], select, textarea {
   margin-bottom: 16px; 
   resize: vertical;
 }
-
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -34,11 +31,9 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
 .container
 {
 font-family: 'Montserrat', sans-serif;
@@ -64,6 +59,5 @@ footer{
 }
 @media screen and (max-width: 480px);
 {
-
 @media screen and (max-width: 768px);
 {
