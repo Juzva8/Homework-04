@@ -7,7 +7,7 @@ This quiz app is something that you need. I know you work a lot but this will ma
 ## Installation
 
 To run this application you need a browser. 
-Any browser will work for you but as a web developer, I recommend you to use google chrome. at  
+Any browser will work for you but as a web developer, I recommend you to use google chrome.
 
 ## Usage 
 
@@ -15,7 +15,7 @@ You have two minutes to complete this quiz.  Every wrong answer will give you a 
 
 ## Credits
 
-I give a lot of credit to my tutor Robby Kurle he helped me a lot with this one. Als some reference from google.com and getbootstrap.com. 
+I give a lot of credit to my tutor Robby Kurle he helped me a lot with this one. Als some reference from google.com and getbootstrap.com.
 
 
 ## License
