@@ -13,6 +13,10 @@ Any browser will work for you but as a web developer, I recommend you to use goo
 
 You have two minutes to complete this quiz.  Every wrong answer will give you a ten-second penalty. At the end of this quiz, you can put in your initials and it will save it for you that you can play it with your friends and check who is better. HAVE FUN 
 
+## Link to deployed version of the app
+
+https://juzva8.github.io/Quiz-App/
+
 ## Credits
 
 I give a lot of credit to my tutor Robby Kurle he helped me a lot with this one. Als some reference from google.com and getbootstrap.com.
