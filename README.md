@@ -17,6 +17,10 @@ You have two minutes to complete this quiz.  Every wrong answer will give you a 
 
 https://juzva8.github.io/Quiz-App/
 
+## Screenshot 
+
+![screenshot](assets/IMG/Screenshot.png)
+
 ## Credits
 
 I give a lot of credit to my tutor Robby Kurle he helped me a lot with this one. Als some reference from google.com and getbootstrap.com.
